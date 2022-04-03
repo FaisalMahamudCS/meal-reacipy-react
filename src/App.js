@@ -5,12 +5,14 @@ import Head from './Component/Head/Head';
 import Category from './Component/Category/Category';
 import About from './Component/About/About';
 import Ingrediant from './Component/Ingrediant/Ingrediant';
+import Home from './Component/Home/Home';
 
 function App() {
   return (
     <div className="App">
+      <Head></Head>
       <Routes>
-        <Route path="/" element={<Head></Head>}>
+        <Route path="/" element={<Home></Home>}>
           
            </Route>
            <Route path='/category' element={<Category></Category>}> </Route>
