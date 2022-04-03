@@ -6,6 +6,7 @@ import Category from './Component/Category/Category';
 import About from './Component/About/About';
 import Ingrediant from './Component/Ingrediant/Ingrediant';
 import Home from './Component/Home/Home';
+import MealDetails from './Component/MealDetails/MealDetails';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
            <Route path='/category' element={<Category></Category>}> </Route>
            <Route path='/about' element={<About></About>}></Route>
            <Route path='/ingrediant' element={<Ingrediant></Ingrediant>}></Route>
+     <Route path='/details/:i' element={<MealDetails></MealDetails>}></Route>
       </Routes>
     </div>
   );
